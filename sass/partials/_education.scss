@@ -1,0 +1,128 @@
+#education {
+    padding: var(--section-space) 0;
+    background-color: #f9f7f7;
+
+    .education-container {
+        width: var(--content-width);
+        margin: 0 auto;
+    }
+
+    .education-heading {
+        margin-bottom: 36px;
+
+        .education-eyebrow {
+            margin: 0 0 12px;
+            color: $primary-color;
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin: 0;
+            color: $primary-color;
+            font-size: $heading-size;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+        }
+    }
+
+    .education-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .education-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+        padding: 28px;
+        border: 1px solid #dce3ed;
+        border-radius: $card-radius;
+        background-color: $white;
+        box-shadow: $card-shadow;
+
+        &--degree { border-color: #b8c7dc; }
+
+        &-icon {
+            @include position();
+            width: 46px;
+            height: 46px;
+            margin-bottom: 24px;
+            border-radius: 12px;
+            background-color: #edf3fa;
+            color: $primary-color;
+            font-size: 1.25rem;
+        }
+
+        &-category {
+            margin: 0 0 12px;
+            color: #52647b;
+            font-size: .73rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin: 0 0 14px;
+            color: $primary-color;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: -.025em;
+        }
+
+        &-subject {
+            margin: 0 0 6px;
+            color: #334d70;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        &-detail {
+            margin: 0 0 24px;
+            color: #43536a;
+            font-size: .9rem;
+            line-height: 1.75;
+        }
+
+        &-status, &-level {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+            padding: 7px 12px;
+            border: 1px solid #dce5f2;
+            border-radius: 7px;
+            background-color: #edf3fa;
+            color: $primary-color;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #education {
+        .education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .education-card--degree { grid-column: 1 / -1; }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #education {
+
+.education-grid {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 18px;
+        }
+
+        .education-card { padding: 22px; }
+    }
+}

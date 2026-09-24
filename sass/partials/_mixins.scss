@@ -1,0 +1,6 @@
+@mixin position($js:center, $ai:center, $fd:row){
+    display: flex;
+    justify-content: $js;
+    align-items: $ai;
+    flex-direction: $fd;
+}
