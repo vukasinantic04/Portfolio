@@ -2,11 +2,6 @@
     padding: var(--section-space) 0;
     background-color: #f9f7f7;
 
-    .education-container {
-        width: var(--content-width);
-        margin: 0 auto;
-    }
-
     .education-heading {
         margin-bottom: 36px;
 
@@ -27,12 +22,6 @@
             letter-spacing: -.04em;
             line-height: 1.2;
         }
-    }
-
-    .education-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr));
-        gap: 24px;
     }
 
     .education-card {
@@ -108,20 +97,8 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767.98px) {
     #education {
-        .education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-        .education-card--degree { grid-column: 1 / -1; }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #education {
-
-.education-grid {
-            grid-template-columns: minmax(0, 1fr);
-            gap: 18px;
-        }
 
         .education-card { padding: 22px; }
     }

@@ -2,7 +2,7 @@
     const nav = document.querySelector('.site-nav');
     const toggle = nav.querySelector('.site-nav-toggle');
     const menu = nav.querySelector('.site-nav-menu');
-    const mobile = window.matchMedia('(max-width: 850px)');
+    const mobile = window.matchMedia('(max-width: 991.98px)');
     function setOpen(open, restoreFocus = false) {
         nav.classList.toggle('is-open', open);
         toggle.setAttribute('aria-expanded', String(open));

@@ -3,15 +3,6 @@
     background-color: $primary-color;
     color: $white;
 
-    .contact-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 36px;
-        width: var(--content-width);
-        margin: 0 auto;
-    }
-
     .contact-intro {
         min-width: 0;
 
@@ -107,15 +98,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    #contact .contact-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767.98px) {
     #contact {
         padding: 40px 0;
 

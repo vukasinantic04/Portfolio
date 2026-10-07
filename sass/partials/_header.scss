@@ -14,11 +14,8 @@ header { width: 100%; padding-top: 80px; }
     }
 
     &-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         gap: 24px;
-        width: var(--content-width);
+
         min-height: 80px;
         margin: 0 auto;
     }
@@ -105,10 +102,10 @@ header { width: 100%; padding-top: 80px; }
 html body #home { scroll-margin-top: 0; }
 html body :is(#projects, #skills, #education, #contact) { scroll-margin-top: 104px; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 991.98px) {
     header { padding-top: 72px; }
     .site-nav {
-        &-inner { min-height: 72px; flex-wrap: wrap; gap: 0; }
+        &-inner { min-height: 72px; gap: 0; }
         &-brand { font-size: 1.15rem; }
         &-menu {
             width: 100%;

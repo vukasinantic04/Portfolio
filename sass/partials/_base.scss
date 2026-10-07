@@ -1,5 +1,4 @@
 :root {
-    --content-width: min(1120px, calc(100% - 64px));
     --section-space: 80px;
 }
 
@@ -18,17 +17,20 @@ h1, h2, h3 { line-height: 1.2; overflow-wrap: break-word; }
 img { max-width: 100%; }
 [hidden] { display: none !important; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991.98px) {
     :root { --section-space: 64px; }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767.98px) {
     :root {
-        --content-width: min(540px, calc(100% - 40px));
-        --section-space: 56px;
+            --section-space: 56px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
 }
+
+// Keep the original visual width while Bootstrap manages columns and gutters.
+.container { --bs-gutter-x: 2.5rem; }
+@media (min-width: 1200px) { .container { max-width: 1160px; } }

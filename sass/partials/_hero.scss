@@ -4,13 +4,8 @@ header {
     background: linear-gradient(120deg, rgba(249, 247, 247, .97) 15%, rgba(249, 247, 247, .82) 65%, rgba(235, 243, 250, .85)), url('../img/cover.jpg') center / cover;
 
     .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-        align-items: center;
-        gap: clamp(2rem, 6vw, 6rem);
-        width: var(--content-width);
-        margin: 0 auto;
-        padding: 56px 0 var(--section-space);
+        padding-top: 56px;
+        padding-bottom: var(--section-space);
         color: $primary-color;
 
         &-eyebrow {
@@ -109,7 +104,7 @@ header {
             position: relative;
             width: 100%;
             max-width: 400px;
-            justify-self: end;
+            
             padding: 10px;
             border: 1px solid rgba($primary-color, .18);
             border-radius: 32px;
@@ -129,17 +124,15 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
     header {
 .hero {
-            grid-template-columns: minmax(0, 1fr);
-            gap: 40px;
-            width: var(--content-width);
 
-            padding: 40px 0 var(--section-space);
+            padding-top: 40px;
+            padding-bottom: var(--section-space);
 
             &-portrait {
-                justify-self: center;
+                
                 max-width: 340px;
             }
         }
